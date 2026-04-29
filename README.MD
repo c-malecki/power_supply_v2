@@ -1,3 +1,3 @@
 # Power Supply V2
 
-![Block Diagram](./content/img/block_diagram_rev_1.png)
+![Block Diagram](./docs/hardware/block_diagram_rev_1.png)
