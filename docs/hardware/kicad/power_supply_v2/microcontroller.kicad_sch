@@ -1981,10 +1981,6 @@
 		(uuid "5ec738c6-63c7-457d-8b4a-5401e3b19011")
 	)
 	(no_connect
-		(at 186.69 81.28)
-		(uuid "64eb818e-9ad3-4bba-b8e1-13506a5b996c")
-	)
-	(no_connect
 		(at 72.39 81.28)
 		(uuid "6805c770-04d9-4b6a-b440-f5afae690690")
 	)
@@ -2031,10 +2027,6 @@
 	(no_connect
 		(at 232.41 86.36)
 		(uuid "d2e731f0-34e8-4d28-b33d-e06738296cc2")
-	)
-	(no_connect
-		(at 186.69 78.74)
-		(uuid "dd2ae9b6-1ac0-4fe2-867f-98adfe6abb99")
 	)
 	(no_connect
 		(at 186.69 88.9)
@@ -2180,6 +2172,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 78.74) (xy 186.69 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d425f36-5059-4a6a-8aa5-4a433d931813")
+	)
+	(wire
+		(pts
 			(xy 60.96 109.22) (xy 72.39 109.22)
 		)
 		(stroke
@@ -2227,6 +2229,16 @@
 			(type default)
 		)
 		(uuid "989b2e2a-c1b0-4101-b10a-b115b4518762")
+	)
+	(wire
+		(pts
+			(xy 175.26 81.28) (xy 186.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5fe5c81-aff2-4d96-afb2-7adf11a6d217")
 	)
 	(wire
 		(pts
@@ -2357,6 +2369,17 @@
 			(type default)
 		)
 		(uuid "f2d8c6c1-224a-4e53-9477-30ff2b02e6c6")
+	)
+	(hierarchical_label "DAC_5V5_PA5"
+		(shape output)
+		(at 175.26 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "075f6da2-1328-4791-9ee4-e95f583ba5bb")
 	)
 	(hierarchical_label "I2C2_SCL_PA9"
 		(shape bidirectional)
@@ -2555,6 +2578,17 @@
 			(justify right)
 		)
 		(uuid "a698f849-6a75-439c-936a-9f397f5aa9a8")
+	)
+	(hierarchical_label "DAC_3V7_PA6"
+		(shape output)
+		(at 175.26 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4d1e5fe-69da-44be-9319-8dcbb06025eb")
 	)
 	(hierarchical_label "HS_SW_5VB_PC3"
 		(shape output)
