@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-04-30")
-		(rev "A2")
+		(date "2026-05-01")
+		(rev "A3")
 	)
 	(lib_symbols
 		(symbol "Library:C_Small"
@@ -2255,10 +2255,10 @@
 	)
 	(text "VOLTAGE BUFFER + FAN & LEDs"
 		(exclude_from_sim no)
-		(at 78.74 17.78 0)
+		(at 44.45 21.59 0)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 5.08 5.08)
 				(thickness 1.016)
 				(bold yes)
 			)
@@ -3300,20 +3300,20 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3bfc9aab-bbf6-421d-8063-d4c52c396d17")
-		(property "Reference" "U19"
-			(at 49.784 58.674 0)
+		(property "Reference" "U11"
+			(at 39.37 57.15 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 2.54 2.54)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "SN74AHCT125N"
-			(at 49.784 61.214 0)
+			(at 39.37 62.23 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 2.54 2.54)
 				)
 				(justify left)
 			)
@@ -3482,7 +3482,7 @@
 		(instances
 			(project "power_supply_v2"
 				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/f46472e6-7163-47dd-a53b-dd0b116ef3da"
-					(reference "U19")
+					(reference "U11")
 					(unit 1)
 				)
 			)

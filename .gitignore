@@ -2,3 +2,5 @@ docs/hardware/kicad/power_supply_v2/power_supply_v2-backups
 docs/hardware/kicad/power_supply_v2/\~power_supply_v2.kicad_sch.lck
 docs/hardware/kicad/power_supply_v2/power_supply_v2.kicad_prl
 docs/hardware/kicad/power_supply_v2/\#auto_saved_files\#
+docs/hardware/kicad/power_supply_v2/_autosave*
+docs/hardware/kicad/power_supply_v2/*.bak

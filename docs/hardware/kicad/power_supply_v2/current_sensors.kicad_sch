@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-04-30")
-		(rev "A2")
+		(date "2026-05-01")
+		(rev "A3")
 	)
 	(lib_symbols
 		(symbol "Library:INA180A3"
@@ -453,7 +453,7 @@
 	)
 	(text "GND"
 		(exclude_from_sim no)
-		(at 47.498 123.444 0)
+		(at 142.748 91.694 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -461,19 +461,9 @@
 		)
 		(uuid "0142b47b-a407-46b0-9dcf-11cb494e5fd5")
 	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 142.748 85.344 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0159536d-4583-477d-a117-c013d7a1d9d1")
-	)
 	(text "IN-"
 		(exclude_from_sim no)
-		(at 38.862 121.92 0)
+		(at 134.112 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -481,22 +471,12 @@
 		)
 		(uuid "0f88ef31-b4c8-4511-aee6-03fdbdbea324")
 	)
-	(text "VS"
-		(exclude_from_sim no)
-		(at 142.494 72.136 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1478633b-7208-43ed-b8bb-56ce50b2d97f")
-	)
 	(text "CURRENT SENSORS"
 		(exclude_from_sim no)
-		(at 88.9 17.78 0)
+		(at 68.58 21.59 0)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 5.08 5.08)
 				(thickness 1.016)
 				(bold yes)
 			)
@@ -506,7 +486,7 @@
 	)
 	(text "VS"
 		(exclude_from_sim no)
-		(at 142.494 34.036 0)
+		(at 142.494 40.386 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -516,7 +496,7 @@
 	)
 	(text "OUT"
 		(exclude_from_sim no)
-		(at 54.102 81.026 0)
+		(at 66.802 87.376 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -526,7 +506,7 @@
 	)
 	(text "OUT"
 		(exclude_from_sim no)
-		(at 54.102 42.926 0)
+		(at 66.802 49.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -536,7 +516,7 @@
 	)
 	(text "IN-"
 		(exclude_from_sim no)
-		(at 38.862 45.72 0)
+		(at 51.562 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -546,7 +526,7 @@
 	)
 	(text "IN+"
 		(exclude_from_sim no)
-		(at 38.608 35.052 0)
+		(at 51.308 41.402 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -556,7 +536,7 @@
 	)
 	(text "VS"
 		(exclude_from_sim no)
-		(at 47.244 72.136 0)
+		(at 59.944 78.486 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -564,19 +544,9 @@
 		)
 		(uuid "796afe53-9c26-434e-bb52-8935efc622e6")
 	)
-	(text "IN+"
-		(exclude_from_sim no)
-		(at 133.858 73.152 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "917de44c-451f-44a7-b9f9-85d61433fd88")
-	)
 	(text "IN-"
 		(exclude_from_sim no)
-		(at 134.112 45.72 0)
+		(at 134.112 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -586,7 +556,7 @@
 	)
 	(text "IN+"
 		(exclude_from_sim no)
-		(at 133.858 35.052 0)
+		(at 133.858 41.402 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -594,19 +564,9 @@
 		)
 		(uuid "9525917b-1884-4284-a02d-a6f365d02a97")
 	)
-	(text "OUT"
-		(exclude_from_sim no)
-		(at 149.352 81.026 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a1ad1981-b983-4809-9508-9bef74523d3b")
-	)
 	(text "VS"
 		(exclude_from_sim no)
-		(at 47.244 110.236 0)
+		(at 142.494 78.486 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -614,19 +574,9 @@
 		)
 		(uuid "aaa6e11f-a1c8-4dee-9006-623d5d57b231")
 	)
-	(text "IN-"
-		(exclude_from_sim no)
-		(at 134.112 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "be786d87-61ae-415e-81e5-0967429a66f1")
-	)
 	(text "GND"
 		(exclude_from_sim no)
-		(at 142.748 47.244 0)
+		(at 142.748 53.594 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -636,7 +586,7 @@
 	)
 	(text "OUT"
 		(exclude_from_sim no)
-		(at 149.352 42.926 0)
+		(at 149.352 49.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -646,7 +596,7 @@
 	)
 	(text "OUT"
 		(exclude_from_sim no)
-		(at 54.102 119.126 0)
+		(at 149.352 87.376 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -656,7 +606,7 @@
 	)
 	(text "GND"
 		(exclude_from_sim no)
-		(at 47.498 85.344 0)
+		(at 60.198 91.694 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -666,7 +616,7 @@
 	)
 	(text "VS"
 		(exclude_from_sim no)
-		(at 47.244 34.036 0)
+		(at 59.944 40.386 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -676,7 +626,7 @@
 	)
 	(text "IN+"
 		(exclude_from_sim no)
-		(at 38.608 73.152 0)
+		(at 51.308 79.502 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -686,7 +636,7 @@
 	)
 	(text "IN+"
 		(exclude_from_sim no)
-		(at 38.608 111.252 0)
+		(at 133.858 79.502 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -696,7 +646,7 @@
 	)
 	(text "GND"
 		(exclude_from_sim no)
-		(at 47.498 47.244 0)
+		(at 60.198 53.594 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -706,7 +656,7 @@
 	)
 	(text "IN-"
 		(exclude_from_sim no)
-		(at 38.862 83.82 0)
+		(at 51.562 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -716,7 +666,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 119.38) (xy 39.37 119.38)
+			(xy 132.08 87.63) (xy 134.62 87.63)
 		)
 		(stroke
 			(width 0)
@@ -726,7 +676,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 31.75) (xy 139.7 33.02)
+			(xy 139.7 38.1) (xy 139.7 39.37)
 		)
 		(stroke
 			(width 0)
@@ -736,17 +686,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 76.2) (xy 134.62 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3694eff7-5c9e-4efa-ae22-0d7ddaef4d68")
-	)
-	(wire
-		(pts
-			(xy 54.61 116.84) (xy 57.15 116.84)
+			(xy 149.86 85.09) (xy 152.4 85.09)
 		)
 		(stroke
 			(width 0)
@@ -756,17 +696,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 78.74) (xy 152.4 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40612b9d-30c8-49e7-bb5f-57a2c725876f")
-	)
-	(wire
-		(pts
-			(xy 54.61 40.64) (xy 57.15 40.64)
+			(xy 67.31 46.99) (xy 69.85 46.99)
 		)
 		(stroke
 			(width 0)
@@ -776,7 +706,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 81.28) (xy 39.37 81.28)
+			(xy 49.53 87.63) (xy 52.07 87.63)
 		)
 		(stroke
 			(width 0)
@@ -786,7 +716,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 78.74) (xy 57.15 78.74)
+			(xy 67.31 85.09) (xy 69.85 85.09)
 		)
 		(stroke
 			(width 0)
@@ -796,7 +726,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 76.2) (xy 39.37 76.2)
+			(xy 49.53 82.55) (xy 52.07 82.55)
 		)
 		(stroke
 			(width 0)
@@ -806,7 +736,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 69.85) (xy 44.45 71.12)
+			(xy 57.15 76.2) (xy 57.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -816,7 +746,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 38.1) (xy 134.62 38.1)
+			(xy 132.08 44.45) (xy 134.62 44.45)
 		)
 		(stroke
 			(width 0)
@@ -826,7 +756,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 114.3) (xy 39.37 114.3)
+			(xy 132.08 82.55) (xy 134.62 82.55)
 		)
 		(stroke
 			(width 0)
@@ -836,7 +766,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 43.18) (xy 134.62 43.18)
+			(xy 132.08 49.53) (xy 134.62 49.53)
 		)
 		(stroke
 			(width 0)
@@ -846,7 +776,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 40.64) (xy 152.4 40.64)
+			(xy 149.86 46.99) (xy 152.4 46.99)
 		)
 		(stroke
 			(width 0)
@@ -856,7 +786,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 38.1) (xy 39.37 38.1)
+			(xy 49.53 44.45) (xy 52.07 44.45)
 		)
 		(stroke
 			(width 0)
@@ -866,7 +796,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 31.75) (xy 44.45 33.02)
+			(xy 57.15 38.1) (xy 57.15 39.37)
 		)
 		(stroke
 			(width 0)
@@ -876,17 +806,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 69.85) (xy 139.7 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5701bb8-4a22-4c98-b563-ae5d14b28aca")
-	)
-	(wire
-		(pts
-			(xy 36.83 43.18) (xy 39.37 43.18)
+			(xy 49.53 49.53) (xy 52.07 49.53)
 		)
 		(stroke
 			(width 0)
@@ -896,7 +816,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 107.95) (xy 44.45 109.22)
+			(xy 139.7 76.2) (xy 139.7 77.47)
 		)
 		(stroke
 			(width 0)
@@ -904,30 +824,9 @@
 		)
 		(uuid "f5a88541-90d8-49df-ac0c-7327969736bf")
 	)
-	(wire
-		(pts
-			(xy 132.08 81.28) (xy 134.62 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9a5bb62-b9e9-49c9-801b-1086a8cd1fef")
-	)
-	(hierarchical_label "INA_12V_IN-"
-		(shape input)
-		(at 132.08 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "009f389c-2410-4d20-bf42-c6ce21658df3")
-	)
 	(hierarchical_label "INA_V_{VAR}_IN+"
 		(shape input)
-		(at 36.83 114.3 180)
+		(at 132.08 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -938,7 +837,7 @@
 	)
 	(hierarchical_label "INA_5VB_OUT_PB12"
 		(shape output)
-		(at 152.4 40.64 0)
+		(at 152.4 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -949,7 +848,7 @@
 	)
 	(hierarchical_label "INA_5VB_IN+"
 		(shape input)
-		(at 132.08 38.1 180)
+		(at 132.08 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -960,7 +859,7 @@
 	)
 	(hierarchical_label "INA_V_{VAR}_IN-"
 		(shape input)
-		(at 36.83 119.38 180)
+		(at 132.08 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -971,7 +870,7 @@
 	)
 	(hierarchical_label "INA_5VB_IN-"
 		(shape input)
-		(at 132.08 43.18 180)
+		(at 132.08 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -980,20 +879,9 @@
 		)
 		(uuid "94d33c97-52f8-4cc1-b1e3-ae9436f70fc8")
 	)
-	(hierarchical_label "INA_12V_IN+"
-		(shape input)
-		(at 132.08 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a41f00c6-31af-49ca-914a-cbf4448cfbf0")
-	)
 	(hierarchical_label "INA_5VA_IN+"
 		(shape input)
-		(at 36.83 38.1 180)
+		(at 49.53 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1004,7 +892,7 @@
 	)
 	(hierarchical_label "INA_V_{VAR}_OUT_PB14"
 		(shape output)
-		(at 57.15 116.84 0)
+		(at 152.4 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1015,7 +903,7 @@
 	)
 	(hierarchical_label "INA_20V_IN+"
 		(shape input)
-		(at 36.83 76.2 180)
+		(at 49.53 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1026,7 +914,7 @@
 	)
 	(hierarchical_label "INA_20V_OUT_PB0"
 		(shape output)
-		(at 57.15 78.74 0)
+		(at 69.85 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1037,7 +925,7 @@
 	)
 	(hierarchical_label "INA_5VA_OUT_PB1"
 		(shape output)
-		(at 57.15 40.64 0)
+		(at 69.85 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1048,7 +936,7 @@
 	)
 	(hierarchical_label "INA_20V_IN-"
 		(shape input)
-		(at 36.83 81.28 180)
+		(at 49.53 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1057,20 +945,9 @@
 		)
 		(uuid "e16d2aff-ea75-4ed9-973e-e086d060ab86")
 	)
-	(hierarchical_label "INA_12V_OUT_PB13"
-		(shape output)
-		(at 152.4 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e4205b28-7d4d-4129-9dbd-20925acfdb50")
-	)
 	(hierarchical_label "INA_5VA_IN-"
 		(shape input)
-		(at 36.83 43.18 180)
+		(at 49.53 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1081,7 +958,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 44.45 107.95 0)
+		(at 139.7 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1089,7 +966,7 @@
 		(dnp no)
 		(uuid "20c3419d-950e-475e-b3fe-a4c994eeca59")
 		(property "Reference" "#PWR057"
-			(at 44.45 111.76 0)
+			(at 139.7 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1098,7 +975,7 @@
 			)
 		)
 		(property "Value" "+3V3A"
-			(at 44.45 102.87 0)
+			(at 139.7 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1106,7 +983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 107.95 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1115,7 +992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 107.95 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1124,7 +1001,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 44.45 107.95 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1145,82 +1022,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 139.7 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "228212b1-0ccb-40db-9a6f-01d5b4c92d79")
-		(property "Reference" "#PWR055"
-			(at 139.7 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3A"
-			(at 139.7 64.77 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5787782b-56ea-49ab-88a3-42f2a9c0c112")
-		)
-		(instances
-			(project "power_supply_v2"
-				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Library:INA180A3")
-		(at 46.99 116.84 0)
+		(at 142.24 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3150783d-89e7-4c09-a726-668b8a9f5e13")
-		(property "Reference" "U23"
-			(at 55.88 109.22 0)
+		(property "Reference" "U15"
+			(at 151.13 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,7 +1039,7 @@
 			)
 		)
 		(property "Value" "INA180A3"
-			(at 55.88 111.76 0)
+			(at 151.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1236,7 +1047,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 48.26 115.57 0)
+			(at 143.51 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1056,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
-			(at 50.8 113.03 0)
+			(at 146.05 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,7 +1065,7 @@
 			)
 		)
 		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 100 V/V, SOT-23-5"
-			(at 46.99 116.84 0)
+			(at 142.24 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1280,7 +1091,7 @@
 		(instances
 			(project "power_supply_v2"
 				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "U23")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -1288,7 +1099,7 @@
 	)
 	(symbol
 		(lib_id "Library:INA180A3")
-		(at 142.24 40.64 0)
+		(at 142.24 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1296,8 +1107,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "369a800f-ca96-4169-8f84-7363a906f982")
-		(property "Reference" "U21"
-			(at 153.67 34.2198 0)
+		(property "Reference" "U13"
+			(at 153.67 40.5698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1305,7 +1116,7 @@
 			)
 		)
 		(property "Value" "INA180A1"
-			(at 153.67 36.7598 0)
+			(at 153.67 43.1098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1124,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 143.51 39.37 0)
+			(at 143.51 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1322,7 +1133,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
-			(at 146.05 36.83 0)
+			(at 146.05 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,7 +1142,7 @@
 			)
 		)
 		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 100 V/V, SOT-23-5"
-			(at 142.24 40.64 0)
+			(at 142.24 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +1168,7 @@
 		(instances
 			(project "power_supply_v2"
 				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "U21")
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -1365,7 +1176,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 44.45 31.75 0)
+		(at 57.15 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1374,7 +1185,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cc4c584-b867-4d2d-bec8-0a424a4fe7df")
 		(property "Reference" "#PWR013"
-			(at 44.45 35.56 0)
+			(at 57.15 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,7 +1194,7 @@
 			)
 		)
 		(property "Value" "+3V3A"
-			(at 44.45 26.67 0)
+			(at 57.15 33.02 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -1392,7 +1203,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 31.75 0)
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,7 +1212,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 31.75 0)
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,7 +1221,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 44.45 31.75 0)
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,7 +1243,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 44.45 48.26 0)
+		(at 57.15 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1441,7 +1252,7 @@
 		(fields_autoplaced yes)
 		(uuid "56cf17fe-cb64-4438-b823-7a496e6d0edd")
 		(property "Reference" "#PWR037"
-			(at 44.45 54.61 0)
+			(at 57.15 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1450,7 +1261,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 44.45 53.34 0)
+			(at 57.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1459,7 +1270,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 48.26 0)
+			(at 57.15 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,7 +1279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 48.26 0)
+			(at 57.15 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1288,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 44.45 48.26 0)
+			(at 57.15 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,7 +1310,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 139.7 31.75 0)
+		(at 139.7 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1507,7 +1318,7 @@
 		(dnp no)
 		(uuid "6e1a3f60-066b-43a5-a3b7-ec3637fec7b6")
 		(property "Reference" "#PWR043"
-			(at 139.7 35.56 0)
+			(at 139.7 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +1327,7 @@
 			)
 		)
 		(property "Value" "+3V3A"
-			(at 139.7 26.67 0)
+			(at 139.7 33.02 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -1525,7 +1336,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 31.75 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,7 +1345,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 31.75 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,7 +1354,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 31.75 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1565,15 +1376,15 @@
 	)
 	(symbol
 		(lib_id "Library:INA180A3")
-		(at 46.99 78.74 0)
+		(at 59.69 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "87f7095b-ebf6-41d9-8838-ecaea552b52c")
-		(property "Reference" "U11"
-			(at 57.15 71.12 0)
+		(property "Reference" "U14"
+			(at 69.85 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1581,7 +1392,7 @@
 			)
 		)
 		(property "Value" "INA180A3"
-			(at 57.15 73.66 0)
+			(at 69.85 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1589,7 +1400,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 48.26 77.47 0)
+			(at 60.96 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1598,7 +1409,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
-			(at 50.8 74.93 0)
+			(at 63.5 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1607,7 +1418,7 @@
 			)
 		)
 		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 100 V/V, SOT-23-5"
-			(at 46.99 78.74 0)
+			(at 59.69 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,7 +1444,7 @@
 		(instances
 			(project "power_supply_v2"
 				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "U11")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -1641,15 +1452,15 @@
 	)
 	(symbol
 		(lib_id "Library:INA180A3")
-		(at 46.99 40.64 0)
+		(at 59.69 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "92956ac2-2887-463f-adb3-eaff4ffbeb0e")
-		(property "Reference" "U20"
-			(at 57.15 33.02 0)
+		(property "Reference" "U12"
+			(at 69.85 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,7 +1468,7 @@
 			)
 		)
 		(property "Value" "INA180A1"
-			(at 57.15 35.56 0)
+			(at 69.85 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +1476,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 48.26 39.37 0)
+			(at 60.96 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1485,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
-			(at 50.8 36.83 0)
+			(at 63.5 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1683,7 +1494,7 @@
 			)
 		)
 		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 100 V/V, SOT-23-5"
-			(at 46.99 40.64 0)
+			(at 59.69 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,74 +1520,7 @@
 		(instances
 			(project "power_supply_v2"
 				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "U20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 139.7 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "943d62cc-d56d-41d2-8b92-97574fff4573")
-		(property "Reference" "#PWR056"
-			(at 139.7 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 139.7 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a2fc77a-3834-4f72-bfdf-dc80d55a8dc4")
-		)
-		(instances
-			(project "power_supply_v2"
-				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "#PWR056")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -1784,7 +1528,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 44.45 69.85 0)
+		(at 57.15 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1792,7 +1536,7 @@
 		(dnp no)
 		(uuid "a7d80213-1355-4a23-8710-44ac10c9ef8b")
 		(property "Reference" "#PWR04"
-			(at 44.45 73.66 0)
+			(at 57.15 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,7 +1545,7 @@
 			)
 		)
 		(property "Value" "+3V3A"
-			(at 44.45 64.77 0)
+			(at 57.15 71.12 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -1810,7 +1554,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 69.85 0)
+			(at 57.15 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1819,7 +1563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 69.85 0)
+			(at 57.15 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,7 +1572,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 44.45 69.85 0)
+			(at 57.15 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1850,7 +1594,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 44.45 124.46 0)
+		(at 139.7 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1859,7 +1603,7 @@
 		(fields_autoplaced yes)
 		(uuid "dae1106f-c0b6-4dcb-b616-66486a5c3dea")
 		(property "Reference" "#PWR076"
-			(at 44.45 130.81 0)
+			(at 139.7 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,7 +1612,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 44.45 129.54 0)
+			(at 139.7 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,7 +1621,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 124.46 0)
+			(at 139.7 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1886,7 +1630,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 124.46 0)
+			(at 139.7 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,7 +1639,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 44.45 124.46 0)
+			(at 139.7 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1916,84 +1660,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:INA180A3")
-		(at 142.24 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e7c0966f-302e-44cc-a86d-22b01b4ed68b")
-		(property "Reference" "U22"
-			(at 152.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA180A3"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 143.51 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
-			(at 146.05 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 100 V/V, SOT-23-5"
-			(at 142.24 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "b2af6cfa-a871-40ea-8ec9-a623b41ab2b2")
-		)
-		(pin "2"
-			(uuid "8803881c-f416-4c73-bd90-de354006525c")
-		)
-		(pin "3"
-			(uuid "8c1094cc-8ab5-4595-9ffe-f0ffb3b9840c")
-		)
-		(pin "1"
-			(uuid "e09a88ef-c226-4ea5-85b5-5c12a9dbeb0a")
-		)
-		(pin "5"
-			(uuid "9ee67390-2e50-4260-ba79-9a0b3425e54d")
-		)
-		(instances
-			(project "power_supply_v2"
-				(path "/cac0009d-9d0b-438f-a386-67368a9db47f/99e06c1c-e811-40a8-9450-ac2c829e30d5"
-					(reference "U22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
-		(at 139.7 48.26 0)
+		(at 139.7 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2002,7 +1670,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb324ccf-b90a-4c7e-bee0-c95628821e4c")
 		(property "Reference" "#PWR053"
-			(at 139.7 54.61 0)
+			(at 139.7 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2011,7 +1679,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 139.7 53.34 0)
+			(at 139.7 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,7 +1688,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 48.26 0)
+			(at 139.7 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,7 +1697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 48.26 0)
+			(at 139.7 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2038,7 +1706,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 139.7 48.26 0)
+			(at 139.7 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,7 +1728,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 44.45 86.36 0)
+		(at 57.15 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2069,7 +1737,7 @@
 		(fields_autoplaced yes)
 		(uuid "fabb54c2-0cd1-4024-aed3-bf86c2f5f7e5")
 		(property "Reference" "#PWR012"
-			(at 44.45 92.71 0)
+			(at 57.15 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2078,7 +1746,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 44.45 91.44 0)
+			(at 57.15 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +1755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 86.36 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2096,7 +1764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 86.36 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2105,7 +1773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 44.45 86.36 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)

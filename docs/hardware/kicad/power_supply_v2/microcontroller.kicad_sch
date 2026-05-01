@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-04-30")
-		(rev "A2")
+		(date "2026-05-01")
+		(rev "A3")
 	)
 	(lib_symbols
 		(symbol "Library:NUCLEO-G474RE"
@@ -1865,10 +1865,10 @@
 	)
 	(text "MICROCONTROLLER"
 		(exclude_from_sim no)
-		(at 132.08 19.05 0)
+		(at 111.76 21.59 0)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 5.08 5.08)
 				(thickness 1.016)
 				(bold yes)
 			)
@@ -1915,6 +1915,10 @@
 	(no_connect
 		(at 72.39 86.36)
 		(uuid "1221c2a2-8da1-4022-b212-4179244b9e71")
+	)
+	(no_connect
+		(at 232.41 101.6)
+		(uuid "1486f55a-7d57-4d6d-9a19-e22518e2d3bc")
 	)
 	(no_connect
 		(at 118.11 68.58)
@@ -1989,6 +1993,10 @@
 		(uuid "692421c8-8686-4160-91fe-ee3f16eab768")
 	)
 	(no_connect
+		(at 118.11 99.06)
+		(uuid "69bc7527-67ff-467d-8a2e-4d1ff8fb6c0c")
+	)
+	(no_connect
 		(at 118.11 81.28)
 		(uuid "765be30d-fa71-45cd-86b3-a2f063272fa6")
 	)
@@ -2059,16 +2067,6 @@
 			(type default)
 		)
 		(uuid "1e45bd05-6699-4c6e-8604-f792e035624c")
-	)
-	(wire
-		(pts
-			(xy 232.41 101.6) (xy 242.57 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24f967bd-9ac3-41e3-bd43-de4f4e22756b")
 	)
 	(wire
 		(pts
@@ -2219,16 +2217,6 @@
 			(type default)
 		)
 		(uuid "90a66b4f-c9f2-4450-b43c-e78ac47bb424")
-	)
-	(wire
-		(pts
-			(xy 118.11 99.06) (xy 128.27 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "989b2e2a-c1b0-4101-b10a-b115b4518762")
 	)
 	(wire
 		(pts
@@ -2535,17 +2523,6 @@
 		)
 		(uuid "84775352-8448-4f09-a8f2-f146ac66d1d3")
 	)
-	(hierarchical_label "INA_12V_OUT_PB13"
-		(shape input)
-		(at 242.57 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "85957a4c-bd89-4782-ba8d-408dbc556635")
-	)
 	(hierarchical_label "DAC_V_{VAR}_PA4"
 		(shape output)
 		(at 128.27 104.14 0)
@@ -2644,17 +2621,6 @@
 			(justify right)
 		)
 		(uuid "eb8b35cc-2d75-48ad-8b30-f5b8f027e3f6")
-	)
-	(hierarchical_label "NPN_V_{VAR}_PA0"
-		(shape output)
-		(at 128.27 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f08ffe32-aab9-441e-8d74-0b8f8d297a35")
 	)
 	(hierarchical_label "RTRY_SW_PB10"
 		(shape input)
@@ -2775,13 +2741,12 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "117188f2-a70e-41f3-afbf-b6a82513adf2")
 		(property "Reference" "U10"
-			(at 95.25 58.42 0)
+			(at 95.25 55.88 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 			)
 		)
@@ -2789,7 +2754,7 @@
 			(at 95.25 60.96 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 			)
 		)
@@ -3238,13 +3203,12 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ffe4cfb1-3fcc-468e-936a-19524abef49c")
 		(property "Reference" "U10"
-			(at 209.55 58.42 0)
+			(at 209.55 55.88 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 			)
 		)
@@ -3252,7 +3216,7 @@
 			(at 209.55 60.96 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 			)
 		)
