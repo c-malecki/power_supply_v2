@@ -849,20 +849,19 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "S"
-			(at 8.382 9.906 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" ""
-			(at -6.35 -2.54 0)
+		(property "Value" "SW_Button_4"
+			(at 0 9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -885,12 +884,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SW_Button_4"
+		(property "Description" ""
 			(at 8.128 7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Digi-Key_PN" ""
@@ -4574,15 +4574,15 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "SW2"
-			(at 0 12.7 0)
+			(at 0.254 9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Rotary_Encoder_3_Pin"
-			(at 0 10.16 0)
+		(property "Value" "Rotary_Encoder_3"
+			(at 0.254 7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
