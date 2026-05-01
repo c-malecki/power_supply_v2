@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-04-27")
-		(rev "1")
+		(date "2026-04-30")
+		(rev "A2")
 	)
 	(lib_symbols
 		(symbol "Library:AO3401A"
@@ -4694,9 +4694,9 @@
 		)
 		(uuid ca5cc1c7-c85d-4549-b693-4b4b23bd36de)
 	)
-	(text "V_{out} = 0.596 * (1 + R2 / R1 + R2 / R3) - V_{DAC} * (R2 / R3)\n\nV_{DAC} = 0 to 3V3\nR2 / R3 = ~3.92\nR2 / R1 = ~25.51\n\nWhen V_{DAC} = 0, V_{OUT} = 18.14V\nWhen V_{DAC} = 3V3, V_{OUT} = 5.2V"
+	(text "V_{out} = 0.596 * (1 + R16 / (R17 + R32) + R16 / R18) - V_{DAC} * (R16 / R18)\n\nV_{DAC} = 0 to 3V3\nR16 / (R17 + R32) = 26R53\nR16 / R18 = 4R55\n\nWhen V_{DAC} = 0, V_{OUT} = 19V12\nWhen V_{DAC} = 3V3, V_{OUT} = 4V1"
 		(exclude_from_sim no)
-		(at 124.46 346.71 0)
+		(at 129.794 361.188 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4704,16 +4704,6 @@
 			(justify left)
 		)
 		(uuid "027e869e-1821-460f-8d51-1920051fc6ae")
-	)
-	(text "TODO: rework power rails to rely on filtering via inductor and capacitor"
-		(exclude_from_sim no)
-		(at 185.42 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "10b67e8d-2b18-46eb-b269-ca8043ca7b55")
 	)
 	(text "V_{f(MAX)}=0V7"
 		(exclude_from_sim no)
@@ -4777,6 +4767,17 @@
 			)
 		)
 		(uuid "57dd5e19-84bf-487e-9ef2-ffc1a6bc2992")
+	)
+	(text "V_{out} = 0.596 * (1 + R2 / R3 + R2 / R4) - V_{DAC} * (R2 / R4)\n\nV_{DAC} = 0 to 3V3\nR2 / R3 = 4R54\nR2 / R4 = 1R47\n\nWhen V_{DAC} = 0, V_{OUT} = 4V18\nWhen V_{DAC} = 3V3, V_{OUT} = -0V67\n\nWill only be used to out to compensate\nfor voltage drop across protection diodes"
+		(exclude_from_sim no)
+		(at 144.526 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6938fdae-754a-49c7-969d-492f64adc2f5")
 	)
 	(text "USER\nINTERFACES"
 		(exclude_from_sim no)
@@ -4846,6 +4847,17 @@
 		)
 		(uuid "bfd30186-ddde-4ab7-8cee-b0ebf766f32c")
 	)
+	(text "V_{out} = 0.596 * (1 + R7 / R8 + R7 / R9) - V_{DAC} * (R7 / R9)\n\nV_{DAC} = 0 to 3V3\nR7 / R8 = 2R13\nR7 / R9 = 6R67\n\nWhen V_{DAC} = 0, V_{OUT} = 5V84\nWhen V_{DAC} = 3V3, V_{OUT} = -1V19\n\nWill only be used to out to compensate\nfor voltage drop across protection diodes"
+		(exclude_from_sim no)
+		(at 144.018 206.248 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd0971df-9d48-4244-8176-b3d4646ec8fb")
+	)
 	(text "No pull-up resistors included for I2C\nbecause the OLED and SHT31s are modules\nwith built-in resistors. May need to\nalter modules or remove the resistors."
 		(exclude_from_sim no)
 		(at 610.87 74.93 0)
@@ -4891,46 +4903,6 @@
 			(justify left bottom)
 		)
 		(uuid "f8071246-eaae-481e-97e7-d6253817aeeb")
-	)
-	(text_box "Question 2:\nDoes the feedforward cap value make sense?"
-		(exclude_from_sim no)
-		(at 163.83 300.99 0)
-		(size 26.67 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "6e89d57c-9675-4a4e-8b68-e5ba7ada2662")
-	)
-	(text_box "Question 1:\nDoes this inductor value make sense?"
-		(exclude_from_sim no)
-		(at 135.89 300.99 0)
-		(size 26.67 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "9f10bd76-3d87-42ac-9e4c-863df4502e92")
 	)
 	(junction
 		(at 539.75 24.13)
@@ -6468,6 +6440,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 340.36) (xy 189.23 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326b2538-ea48-46f7-85c9-1089fe7cf9ef")
+	)
+	(wire
+		(pts
 			(xy 408.94 48.26) (xy 414.02 48.26)
 		)
 		(stroke
@@ -7618,7 +7600,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 332.74) (xy 189.23 334.01)
+			(xy 189.23 332.74) (xy 189.23 335.28)
 		)
 		(stroke
 			(width 0)
@@ -8078,16 +8060,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 339.09) (xy 189.23 340.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91659acf-6e70-41e5-a8b0-31787dac11e7")
-	)
-	(wire
-		(pts
 			(xy 260.35 165.1) (xy 261.62 165.1)
 		)
 		(stroke
@@ -8375,6 +8347,16 @@
 			(type default)
 		)
 		(uuid "a2c8bfd0-c949-496d-a4a7-3813a17dd7ce")
+	)
+	(wire
+		(pts
+			(xy 189.23 346.71) (xy 189.23 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a30df870-a2a6-4a76-ae00-431106474bb3")
 	)
 	(wire
 		(pts
@@ -10411,6 +10393,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Library:R_Small_US")
+		(at 189.23 344.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03685981-919b-4c3c-83ec-91ca194464ec")
+		(property "Reference" "R32"
+			(at 191.77 342.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470R"
+			(at 191.77 345.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 189.23 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16e9ed24-26be-42fe-81b1-8bb0310f822d")
+		)
+		(pin "2"
+			(uuid "2bf387f6-4d07-43f3-8ba5-760507c14736")
+		)
+		(instances
+			(project "power_supply_v2"
+				(path "/cac0009d-9d0b-438f-a386-67368a9db47f"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 40.64 43.18 0)
 		(unit 1)
@@ -11075,7 +11127,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22kR1"
+		(property "Value" "22kR"
 			(at 191.77 110.4899 0)
 			(effects
 				(font
@@ -12351,7 +12403,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 189.23 340.36 0)
+		(at 189.23 347.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12360,7 +12412,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b7c9dcc-d26c-47be-9bd2-0ac359bfa7a0")
 		(property "Reference" "#PWR011"
-			(at 189.23 346.71 0)
+			(at 189.23 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12369,7 +12421,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 189.23 345.44 0)
+			(at 189.23 353.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12378,7 +12430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 340.36 0)
+			(at 189.23 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12387,7 +12439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 340.36 0)
+			(at 189.23 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12396,7 +12448,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 189.23 340.36 0)
+			(at 189.23 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15048,7 +15100,7 @@
 				)
 			)
 		)
-		(property "Value" "82kR"
+		(property "Value" "47kR"
 			(at 203.2 176.53 90)
 			(effects
 				(font
@@ -16202,7 +16254,7 @@
 				)
 			)
 		)
-		(property "Value" "62kR"
+		(property "Value" "68kR"
 			(at 203.2 100.33 90)
 			(effects
 				(font
@@ -17160,7 +17212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "13kR3"
+		(property "Value" "15kR"
 			(at 191.77 186.69 0)
 			(effects
 				(font
@@ -18617,7 +18669,7 @@
 	)
 	(symbol
 		(lib_id "Library:R_Small_US")
-		(at 189.23 336.55 0)
+		(at 189.23 337.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18626,7 +18678,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd69d37f-8c02-40a8-9599-311abb15340c")
 		(property "Reference" "R17"
-			(at 191.77 335.2799 0)
+			(at 191.77 336.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18634,8 +18686,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3kR92"
-			(at 191.77 337.8199 0)
+		(property "Value" "3kR3"
+			(at 191.77 339.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18644,7 +18696,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 336.55 0)
+			(at 189.23 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18653,7 +18705,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 336.55 0)
+			(at 189.23 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18662,7 +18714,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 189.23 336.55 0)
+			(at 189.23 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20874,7 +20926,7 @@
 				)
 			)
 		)
-		(property "Value" "25kR5"
+		(property "Value" "22kR"
 			(at 203.2 328.93 90)
 			(effects
 				(font

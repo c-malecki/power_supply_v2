@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-04-27")
-		(rev "1")
+		(date "2026-04-30")
+		(rev "A2")
 	)
 	(lib_symbols
 		(symbol "Library:NUCLEO-G474RE"
