@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-05-01")
-		(rev "A3")
+		(date "2026-05-06")
+		(rev "A4")
 	)
 	(lib_symbols
 		(symbol "Library:C_Small"

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Digital Variable DC Bench Power Supply")
-		(date "2026-05-01")
-		(rev "A3")
+		(date "2026-05-06")
+		(rev "A4")
 	)
 	(lib_symbols
 		(symbol "Library:NUCLEO-G474RE"
@@ -2001,6 +2001,10 @@
 		(uuid "765be30d-fa71-45cd-86b3-a2f063272fa6")
 	)
 	(no_connect
+		(at 232.41 93.98)
+		(uuid "7bd3f166-46f9-4779-8261-d20f9a7c4d5e")
+	)
+	(no_connect
 		(at 232.41 104.14)
 		(uuid "7d5f54f3-1bcc-4213-93b5-bd0b8a01e20a")
 	)
@@ -2290,16 +2294,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 93.98) (xy 242.57 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5bc1566-ed50-4a0f-938e-72f252cbd3a6")
-	)
-	(wire
-		(pts
 			(xy 60.96 99.06) (xy 72.39 99.06)
 		)
 		(stroke
@@ -2412,17 +2406,6 @@
 			(justify right)
 		)
 		(uuid "15cdf36d-7760-468e-a3ba-c8fae9cfe475")
-	)
-	(hierarchical_label "INA_5VA_OUT_PB1"
-		(shape input)
-		(at 242.57 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "215549c2-1983-47da-a6ef-eaf482415835")
 	)
 	(hierarchical_label "BTN_5VB_PC13"
 		(shape input)
