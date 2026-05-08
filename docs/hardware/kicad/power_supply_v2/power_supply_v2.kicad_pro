@@ -35,12 +35,20 @@
         "Tying QOD to VOUT is a valid configuration via the datasheet"
       ],
       [
-        "pin_to_pin|3200400|1295400|9336e226-56bd-428c-ab07-ce918c1ecf78|a175b7ee-7cff-4203-bbc8-d6b27d94ca19|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
+        "pin_to_pin|3200400|2057400|8e0496b6-c601-4f3e-bb71-93de17b4e74c|08f60cb3-6786-448b-b078-6b73f0970904|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
         "Tying QOD to VOUT is a valid configuration per the datasheet."
       ],
       [
-        "pin_to_pin|3200400|2057400|8e0496b6-c601-4f3e-bb71-93de17b4e74c|08f60cb3-6786-448b-b078-6b73f0970904|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
+        "pin_to_pin|3238500|1371600|9336e226-56bd-428c-ab07-ce918c1ecf78|a175b7ee-7cff-4203-bbc8-d6b27d94ca19|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
         "Tying QOD to VOUT is a valid configuration per the datasheet."
+      ],
+      [
+        "pin_to_pin|3822700|2082800|8e0496b6-c601-4f3e-bb71-93de17b4e74c|08f60cb3-6786-448b-b078-6b73f0970904|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
+        "okay per datasheet"
+      ],
+      [
+        "pin_to_pin|3822700|800100|9336e226-56bd-428c-ab07-ce918c1ecf78|a175b7ee-7cff-4203-bbc8-d6b27d94ca19|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f|/cac0009d-9d0b-438f-a386-67368a9db47f",
+        "okay per datasheet"
       ]
     ],
     "meta": {
@@ -429,18 +437,6 @@
     [
       "cac0009d-9d0b-438f-a386-67368a9db47f",
       "Root"
-    ],
-    [
-      "fe2f1604-09f3-48cb-a2f1-59aa5db8a885",
-      "Microcontroller"
-    ],
-    [
-      "f46472e6-7163-47dd-a53b-dd0b116ef3da",
-      "Buffer_Fan_LEDs"
-    ],
-    [
-      "99e06c1c-e811-40a8-9450-ac2c829e30d5",
-      "Current_Sensors"
     ]
   ],
   "text_variables": {}

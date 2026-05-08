@@ -4125,8 +4125,8 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "OLED_96in_64x128_I2C"
-			(at -10.922 7.874 0)
+		(property "Value" "OLED_64x128_I2C"
+			(at -8.382 7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
