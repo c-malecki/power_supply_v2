@@ -7111,9 +7111,9 @@
 		)
 		(uuid "14a47596-83d4-47ca-9fd4-70552ab83438")
 	)
-	(text "TEMPERATURE SENSORS"
+	(text "CURRENT SENSORS"
 		(exclude_from_sim no)
-		(at 105.41 367.03 0)
+		(at 102.616 367.03 0)
 		(effects
 			(font
 				(size 5.08 5.08)
