@@ -136,7 +136,7 @@ void power_bucks(App_t *app)
 
 void run_controllers(App_t *app)
 {
-    Pwr_Ctrl_Run(&app->power_controller);
+    // Pwr_Ctrl_Run(&app->power_controller);
     Temp_Ctrl_Run(&app->temperature_controller);
     Dsp_Ctrl_Run(&app->display_controller);
 }
