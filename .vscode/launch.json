@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Corex Debug (OpenOCD & RTT)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "executable": "build/Debug/power_supply_v2.elf",
+      "device": "STM32G474RE",
+      "preLaunchTask": "Build firmware",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32g4x.cfg"
+      ],
+      "svdPath": "STM32G474.svd",
+      "rttConfig": {
+        "enabled": true,
+        "address": "auto",
+        "decoders": [
+          {
+            "label": "RTT Terminal",
+            "port": 0,
+            "type": "console"
+          }
+        ]
+      },
+    }
+  ]
+}
