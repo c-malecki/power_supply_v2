@@ -100,7 +100,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC2_Init();
-  MX_ADC3_Init();
   MX_ADC5_Init();
   MX_DAC1_Init();
   MX_DAC2_Init();
