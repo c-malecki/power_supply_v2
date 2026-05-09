@@ -8839,7 +8839,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 377.19) (xy 53.34 377.19)
+			(xy 48.26 377.19) (xy 55.88 377.19)
 		)
 		(stroke
 			(width 0)
@@ -9579,7 +9579,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 377.19) (xy 113.03 377.19)
+			(xy 107.95 377.19) (xy 115.57 377.19)
 		)
 		(stroke
 			(width 0)
@@ -9829,7 +9829,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 377.19) (xy 113.03 379.73)
+			(xy 115.57 377.19) (xy 115.57 379.73)
 		)
 		(stroke
 			(width 0)
@@ -10979,7 +10979,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 377.19) (xy 53.34 379.73)
+			(xy 55.88 377.19) (xy 55.88 379.73)
 		)
 		(stroke
 			(width 0)
@@ -11819,7 +11819,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 377.19) (xy 173.99 377.19)
+			(xy 168.91 377.19) (xy 175.26 377.19)
 		)
 		(stroke
 			(width 0)
@@ -12799,7 +12799,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 377.19) (xy 173.99 379.73)
+			(xy 175.26 377.19) (xy 175.26 379.73)
 		)
 		(stroke
 			(width 0)
@@ -16907,7 +16907,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 53.34 379.73 0)
+		(at 55.88 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16916,7 +16916,7 @@
 		(fields_autoplaced yes)
 		(uuid "3260342f-1f2d-414b-875a-9b13b0bdf67b")
 		(property "Reference" "#PWR08"
-			(at 53.34 386.08 0)
+			(at 55.88 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16925,7 +16925,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 53.34 384.81 0)
+			(at 55.88 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16934,7 +16934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 379.73 0)
+			(at 55.88 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16943,7 +16943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 379.73 0)
+			(at 55.88 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16952,7 +16952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 53.34 379.73 0)
+			(at 55.88 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17044,7 +17044,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 173.99 379.73 0)
+		(at 175.26 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17053,7 +17053,7 @@
 		(fields_autoplaced yes)
 		(uuid "33340b38-2b2d-4a75-9e07-23af1a0a288d")
 		(property "Reference" "#PWR043"
-			(at 173.99 386.08 0)
+			(at 175.26 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17062,7 +17062,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 173.99 384.81 0)
+			(at 175.26 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17071,7 +17071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 379.73 0)
+			(at 175.26 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17080,7 +17080,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 379.73 0)
+			(at 175.26 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17089,7 +17089,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 173.99 379.73 0)
+			(at 175.26 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22049,7 +22049,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 113.03 379.73 0)
+		(at 115.57 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22058,7 +22058,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c094d93-f2a2-4d3a-9091-62938d411885")
 		(property "Reference" "#PWR018"
-			(at 113.03 386.08 0)
+			(at 115.57 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22067,7 +22067,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 113.03 384.81 0)
+			(at 115.57 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22076,7 +22076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 379.73 0)
+			(at 115.57 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22085,7 +22085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 379.73 0)
+			(at 115.57 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22094,7 +22094,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 113.03 379.73 0)
+			(at 115.57 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)

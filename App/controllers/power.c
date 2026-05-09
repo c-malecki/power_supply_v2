@@ -46,26 +46,25 @@ static const Pwr_Var_Control_t var_ctrls_default = {
 };
 
 static const Pwr_Buck_t buck_5v_default = {
-    .on = false,
+    .power_on = false,
     .gpio_pin = BUCK_5V_EN_Pin,
     .gpio_port = BUCK_5V_EN_GPIO_Port,
 };
 
 static const Pwr_Buck_t buck_12v_default = {
-    .on = false,
+    .power_on = false,
     .gpio_pin = BUCK_12V_EN_Pin,
     .gpio_port = BUCK_12V_EN_GPIO_Port,
 };
 
 static const Pwr_Buck_t buck_vvar_default = {
-    .on = false,
+    .power_on = false,
     .gpio_pin = BUCK_VVAR_EN_Pin,
     .gpio_port = BUCK_VVAR_EN_GPIO_Port,
 };
 
-void Pwr_Ctrl_Init(Pwr_Ctrl_t *ctrl, I2C_HandleTypeDef *i2c_handle)
+void Pwr_Ctrl_Init(Pwr_Ctrl_t *ctrl)
 {
-    ctrl->i2c_handle = i2c_handle;
     ctrl->channels[PWR_CHAN_3V3] = channel_3v3_default;
     ctrl->channels[PWR_CHAN_5V] = channel_5v_default;
     ctrl->channels[PWR_CHAN_VVAR] = channel_var_default;
@@ -78,9 +77,9 @@ void Pwr_Ctrl_Init(Pwr_Ctrl_t *ctrl, I2C_HandleTypeDef *i2c_handle)
 void Pwr_Buck_Toggle(Pwr_Ctrl_t *ctrl, Pwr_Buck buck)
 {
     Pwr_Buck_t *b = &ctrl->bucks[buck];
-    bool new_state = !b->on;
+    bool new_state = !b->power_on;
     HAL_GPIO_WritePin(b->gpio_port, b->gpio_pin, new_state);
-    b->on = new_state;
+    b->power_on = new_state;
 }
 
 void Pwr_Chan_Toggle(Pwr_Ctrl_t *ctrl, Pwr_Chan channel)
