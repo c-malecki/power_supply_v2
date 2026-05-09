@@ -121,7 +121,7 @@ void init_controllers(App_t *app, I2C_HandleTypeDef *i2c_handle)
 
 void ping_peripherals(App_t *app)
 {
-    Pwr_Ctrl_Ping(&app->power_controller);
+    // Pwr_Ctrl_Ping(&app->power_controller);
     Temp_Ctrl_Ping(&app->temperature_controller);
     Dsp_Ctrl_Ping(&app->display_controller);
 }

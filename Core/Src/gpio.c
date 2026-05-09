@@ -38,7 +38,6 @@
         * Output
         * EVENT_OUT
         * EXTI
-     PA1   ------> SharedAnalog_PA1
 */
 void MX_GPIO_Init(void)
 {
@@ -88,19 +87,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(RTRY_CLK_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : NCA0_Pin NCA2_Pin NCA3_Pin NCA10_Pin
-                           NCA15_Pin */
-  GPIO_InitStruct.Pin = NCA0_Pin|NCA2_Pin|NCA3_Pin|NCA10_Pin
-                          |NCA15_Pin;
+  /*Configure GPIO pins : NCA0_Pin NCA1_Pin NCA2_Pin NCA3_Pin
+                           NCA7_Pin NCA10_Pin NCA15_Pin */
+  GPIO_InitStruct.Pin = NCA0_Pin|NCA1_Pin|NCA2_Pin|NCA3_Pin
+                          |NCA7_Pin|NCA10_Pin|NCA15_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : OPAMP_3V3A_Pin */
-  GPIO_InitStruct.Pin = OPAMP_3V3A_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(OPAMP_3V3A_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LED_DATA_Pin */
   GPIO_InitStruct.Pin = LED_DATA_Pin;
@@ -109,10 +102,10 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED_DATA_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : NCB0_Pin NCB11_Pin NCB12_Pin NCB5_Pin
-                           NCB6_Pin NCB7_Pin NCB8_Pin NCB9_Pin */
-  GPIO_InitStruct.Pin = NCB0_Pin|NCB11_Pin|NCB12_Pin|NCB5_Pin
-                          |NCB6_Pin|NCB7_Pin|NCB8_Pin|NCB9_Pin;
+  /*Configure GPIO pins : NCB0_Pin NCB5_Pin NCB6_Pin NCB7_Pin
+                           NCB8_Pin NCB9_Pin */
+  GPIO_InitStruct.Pin = NCB0_Pin|NCB5_Pin|NCB6_Pin|NCB7_Pin
+                          |NCB8_Pin|NCB9_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);

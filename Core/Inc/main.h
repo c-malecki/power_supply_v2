@@ -82,8 +82,8 @@ void Error_Handler(void);
 #define RTRY_CLK_GPIO_Port GPIOC
 #define NCA0_Pin GPIO_PIN_0
 #define NCA0_GPIO_Port GPIOA
-#define OPAMP_3V3A_Pin GPIO_PIN_1
-#define OPAMP_3V3A_GPIO_Port GPIOA
+#define NCA1_Pin GPIO_PIN_1
+#define NCA1_GPIO_Port GPIOA
 #define NCA2_Pin GPIO_PIN_2
 #define NCA2_GPIO_Port GPIOA
 #define NCA3_Pin GPIO_PIN_3
@@ -94,8 +94,8 @@ void Error_Handler(void);
 #define DAC_5V_BUCK_GPIO_Port GPIOA
 #define DAC_3V3_BUCK_Pin GPIO_PIN_6
 #define DAC_3V3_BUCK_GPIO_Port GPIOA
-#define OPAMP_3V3B_Pin GPIO_PIN_7
-#define OPAMP_3V3B_GPIO_Port GPIOA
+#define NCA7_Pin GPIO_PIN_7
+#define NCA7_GPIO_Port GPIOA
 #define NCC4_Pin GPIO_PIN_4
 #define NCC4_GPIO_Port GPIOC
 #define LED_DATA_Pin GPIO_PIN_5
@@ -108,10 +108,10 @@ void Error_Handler(void);
 #define INA_5VB_ADC2_IN12_GPIO_Port GPIOB
 #define FAN_TACH_TIM2CH3_Pin GPIO_PIN_10
 #define FAN_TACH_TIM2CH3_GPIO_Port GPIOB
-#define NCB11_Pin GPIO_PIN_11
-#define NCB11_GPIO_Port GPIOB
-#define NCB12_Pin GPIO_PIN_12
-#define NCB12_GPIO_Port GPIOB
+#define OPAMP_3V3B_Pin GPIO_PIN_11
+#define OPAMP_3V3B_GPIO_Port GPIOB
+#define OPAMP_3V3A_Pin GPIO_PIN_12
+#define OPAMP_3V3A_GPIO_Port GPIOB
 #define BUCK_5V_EN_Pin GPIO_PIN_13
 #define BUCK_5V_EN_GPIO_Port GPIOB
 #define BUCK_12V_EN_Pin GPIO_PIN_14

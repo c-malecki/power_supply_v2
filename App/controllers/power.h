@@ -69,7 +69,7 @@ typedef struct
 } Pwr_Ctrl_t;
 
 void Pwr_Ctrl_Init(Pwr_Ctrl_t *ctrl, I2C_HandleTypeDef *i2c_handle);
-void Pwr_Ctrl_Ping(Pwr_Ctrl_t *ctrl);
+// void Pwr_Ctrl_Ping(Pwr_Ctrl_t *ctrl);
 void Pwr_Ctrl_Run(Pwr_Ctrl_t *ctrl);
 
 void Pwr_Buck_Toggle(Pwr_Ctrl_t *ctrl, Pwr_Buck buck);
