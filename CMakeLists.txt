@@ -46,12 +46,25 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     "Middleware/SEGGER_RTT.c"
+    "App/app/app.c"
+    "App/common/common.c"
+    "App/controllers/display.c"
+    "App/controllers/led.c"
+    "App/controllers/power.c"
+    "App/controllers/temperature.c"
+    "App/peripherals/sht31.c"
+    "App/peripherals/ssd1306_fonts.c"
+    "App/peripherals/ssd1306.c"
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     "Middleware"
+    "App/app"
+    "App/common"
+    "App/controllers"
+    "App/peripherals"
 )
 
 # Add project symbols (macros)

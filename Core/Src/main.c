@@ -27,7 +27,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdint.h>
+#include <stdio.h>
+
 #include "SEGGER_RTT.h"
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,7 +52,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+static App_t app;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -107,7 +111,8 @@ int main(void)
     MX_TIM6_Init();
     MX_I2C3_Init();
     /* USER CODE BEGIN 2 */
-
+    app.state = APP_STATE_INIT;
+    App_Init(&app, &hi2c3);
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -169,7 +174,107 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+{
+    // TODO: issue #28: set flag and handle logic outside of interrupt
+    Temp_Ctrl_t *ctrl = &app.temperature_controller;
+    if (htim->Instance == TIM5 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) {
+        ctrl->fan.value_cur = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+        ctrl->fan.last_tick = HAL_GetTick();
 
+        if (!ctrl->fan.first_cb) {
+            if (ctrl->fan.value_cur >= ctrl->fan.value_last) {
+                ctrl->fan.value_diff = ctrl->fan.value_cur - ctrl->fan.value_last;
+            } else {
+                ctrl->fan.value_diff =
+                    (0xFFFFFFFF - ctrl->fan.value_last) + ctrl->fan.value_cur + 1;
+            }
+
+            if (ctrl->fan.value_diff > 0) {
+                ctrl->fan.rpm = 30000000.0f / (float)ctrl->fan.value_diff;
+            }
+        }
+
+        ctrl->fan.value_last = ctrl->fan.value_cur;
+        ctrl->fan.first_cb = 0;
+    }
+}
+
+void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM2)
+        HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_2);
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    // static uint32_t last_press_rotary = 0;
+    static uint32_t last_press_3v3 = 0;
+    static uint32_t last_press_5v = 0;
+    static uint32_t last_press_var = 0;
+    static uint32_t last_press_menu = 0;
+    uint32_t now = HAL_GetTick();
+
+    switch (GPIO_Pin) {
+
+    case BTN_VVAR_TOGGLE_Pin:
+    {
+        // TODO: issue #30: adjust debounce time to get buttons to stable toggle
+        if (now - last_press_var < 75) {
+            return;
+        }
+        last_press_var = now;
+        app.power_controller.channels[PWR_CHAN_VVAR].toggle_pending = true;
+        printf("GPIO_BTN_VAR\r\n\n");
+        break;
+    }
+
+    case BTN_5VB_TOGGLE_Pin:
+    {
+        if (now - last_press_5v < 75) {
+            return;
+        }
+        last_press_5v = now;
+        app.power_controller.channels[PWR_CHAN_5V].toggle_pending = true;
+        printf("GPIO_BTN_5V\r\n\n");
+        break;
+    }
+
+    case BTN_3V3B_TOGGLE_Pin:
+    {
+        if (now - last_press_3v3 < 75) {
+            return;
+        }
+        last_press_3v3 = now;
+        app.power_controller.channels[PWR_CHAN_3V3].toggle_pending = true;
+        printf("GPIO_BTN_3V3\r\n\n");
+        break;
+    }
+
+    case BTN_DSP_TOGGLE_Pin:
+    {
+        if (now - last_press_menu < 75) {
+            return;
+        }
+        last_press_menu = now;
+        printf("GPIO_BTN_DSP\r\n\n");
+        break;
+    }
+
+        // case RTRY_SW_Pin:
+        //     if (now - last_press_rotary < 50)
+        //         return;
+        //     last_press_rotary = now;
+        //     app.power_controller->chan_var->rotary.pressed = true;
+        //     break;
+
+        // case BTN_DSP_MENU_Pin:
+        // {
+        // TODO: update display to show menu
+        // rotary now becomes control
+        // }
+    }
+}
 /* USER CODE END 4 */
 
 /**
