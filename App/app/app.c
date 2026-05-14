@@ -80,12 +80,12 @@ void App_Init(App_t *app, I2C_HandleTypeDef *i2c_handle)
     app->temperature_controller.error_ctx = app;
 
     Pwr_Ctrl_Init(&app->power_controller);
-    Temp_Ctrl_Init(&app->temperature_controller, i2c_handle);
-    Dsp_Ctrl_Init(&app->display_controller, i2c_handle);
+    // Temp_Ctrl_Init(&app->temperature_controller, i2c_handle);
+    // Dsp_Ctrl_Init(&app->display_controller, i2c_handle);
 
     // Pwr_Ctrl_Run(&app->power_controller);
-    Temp_Ctrl_Run(&app->temperature_controller);
-    Dsp_Ctrl_Run(&app->display_controller);
+    // Temp_Ctrl_Run(&app->temperature_controller);
+    // Dsp_Ctrl_Run(&app->display_controller);
 }
 
 void App_Run(App_t *app)

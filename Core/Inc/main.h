@@ -76,8 +76,6 @@ void Error_Handler(void);
 #define RTRY_SW_Pin GPIO_PIN_1
 #define RTRY_SW_GPIO_Port GPIOC
 #define RTRY_SW_EXTI_IRQn EXTI1_IRQn
-#define NCC2_Pin GPIO_PIN_2
-#define NCC2_GPIO_Port GPIOC
 #define RTRY_CLK_Pin GPIO_PIN_3
 #define RTRY_CLK_GPIO_Port GPIOC
 #define NCA0_Pin GPIO_PIN_0

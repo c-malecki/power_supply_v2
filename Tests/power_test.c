@@ -24,36 +24,36 @@ void Test_Power(App_t *app)
     Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_5V);
     HAL_Delay(5000);
 
-    //
+    // //
 
-    printf("Buck: 12V on\r\n");
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_12V);
-    HAL_Delay(5000);
+    // printf("Buck: 12V on\r\n");
+    // Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_12V);
+    // HAL_Delay(5000);
 
-    //
+    // //
 
-    printf("Buck: VVAR on\r\n");
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_VVAR);
-    HAL_Delay(2000);
+    // printf("Buck: VVAR on\r\n");
+    // Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_VVAR);
+    // HAL_Delay(2000);
 
-    printf("Chan: VVAR on\r\n");
-    Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_VVAR);
-    HAL_Delay(5000);
+    // printf("Chan: VVAR on\r\n");
+    // Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_VVAR);
+    // HAL_Delay(5000);
 
-    //
+    // //
 
-    // read current/voltage
+    // // read current/voltage
 
-    // 0
+    // // 0
 
-    printf("All off\r\n\n");
+    // printf("All off\r\n\n");
 
-    Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_3V3);
-    Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_5V);
-    Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_VVAR);
+    // Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_3V3);
+    // Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_5V);
+    // Pwr_Chan_Toggle(&app->power_controller, PWR_CHAN_VVAR);
 
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_5V);
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_12V);
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_VVAR);
-    HAL_Delay(5000);
+    // Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_5V);
+    // Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_12V);
+    // Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_VVAR);
+    // HAL_Delay(5000);
 }
