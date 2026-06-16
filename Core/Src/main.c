@@ -20,6 +20,7 @@
 #include "main.h"
 #include "adc.h"
 #include "dac.h"
+#include "dma.h"
 #include "i2c.h"
 #include "opamp.h"
 #include "tim.h"
@@ -32,6 +33,7 @@
 
 #include "SEGGER_RTT.h"
 #include "app.h"
+#include "tests.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,8 +101,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC2_Init();
-  MX_ADC3_Init();
   MX_ADC5_Init();
   MX_DAC1_Init();
   MX_DAC2_Init();
@@ -114,6 +116,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
     app.state = APP_STATE_INIT;
     App_Init(&app, &hi2c3);
+
+    Test_Power(&app);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -228,7 +232,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         }
         last_press_var = now;
         app.power_controller.channels[PWR_CHAN_VVAR].toggle_pending = true;
-        printf("GPIO_BTN_VAR\r\n\n");
+        printf("GPIO_BTN_VVAR\r\n\n");
         break;
     }
 

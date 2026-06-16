@@ -68,4 +68,4 @@ The [first version](https://github.com/c-malecki/power_supply) served as a disco
 
 ### Schematic
 
-![Schematic](./docs/img/power_supply_v2_rev_A4.png)
+![Schematic](./docs/img/power_supply_v2_rev_A5.png)

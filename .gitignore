@@ -27,6 +27,8 @@ objects.list
 Thumbs.db
 
 # KiCad
+docs/todo.txt
+
 docs/hardware/kicad/power_supply_v2/power_supply_v2-backups
 docs/hardware/kicad/power_supply_v2/\~power_supply_v2.kicad_sch.lck
 docs/hardware/kicad/power_supply_v2/power_supply_v2.kicad_prl

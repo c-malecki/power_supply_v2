@@ -10,7 +10,7 @@
 #define FAN_TEMP_MIN 30
 #define FAN_TEMP_MAX 50
 #define FAN_PWM_MIN 800
-#define FAN_PWM_MAX 3999
+#define FAN_PWM_MAX 6799
 
 #define TEMP_CRITICAL 55
 #define TEMP_INTERVAL 1000

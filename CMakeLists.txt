@@ -55,6 +55,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "App/peripherals/sht31.c"
     "App/peripherals/ssd1306_fonts.c"
     "App/peripherals/ssd1306.c"
+    "Tests/power_test.c"
 )
 
 # Add include paths
@@ -65,6 +66,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "App/common"
     "App/controllers"
     "App/peripherals"
+    "Tests"
 )
 
 # Add project symbols (macros)

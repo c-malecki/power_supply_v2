@@ -19,11 +19,6 @@ const char *_App_State_Lookup[] = {
     "Check Display",
 };
 
-void init_controllers(App_t *app, I2C_HandleTypeDef *i2c_handle);
-void ping_peripherals(App_t *app);
-void power_bucks(App_t *app);
-void run_controllers(App_t *app);
-void test_controllers(App_t *app);
 void check_temp(App_t *app);
 void check_power(App_t *app);
 void check_display(App_t *app);
@@ -84,11 +79,13 @@ void App_Init(App_t *app, I2C_HandleTypeDef *i2c_handle)
     app->temperature_controller.error_cb = error_callback;
     app->temperature_controller.error_ctx = app;
 
-    init_controllers(app, i2c_handle);
-    ping_peripherals(app);
-    power_bucks(app);
-    run_controllers(app);
-    test_controllers(app);
+    Pwr_Ctrl_Init(&app->power_controller);
+    // Temp_Ctrl_Init(&app->temperature_controller, i2c_handle);
+    // Dsp_Ctrl_Init(&app->display_controller, i2c_handle);
+
+    // Pwr_Ctrl_Run(&app->power_controller);
+    // Temp_Ctrl_Run(&app->temperature_controller);
+    // Dsp_Ctrl_Run(&app->display_controller);
 }
 
 void App_Run(App_t *app)
@@ -110,40 +107,6 @@ void App_Run(App_t *app)
         check_display(app);
         break;
     }
-}
-
-void init_controllers(App_t *app, I2C_HandleTypeDef *i2c_handle)
-{
-    Pwr_Ctrl_Init(&app->power_controller, i2c_handle);
-    Temp_Ctrl_Init(&app->temperature_controller, i2c_handle);
-    Dsp_Ctrl_Init(&app->display_controller, i2c_handle);
-}
-
-void ping_peripherals(App_t *app)
-{
-    // Pwr_Ctrl_Ping(&app->power_controller);
-    Temp_Ctrl_Ping(&app->temperature_controller);
-    Dsp_Ctrl_Ping(&app->display_controller);
-}
-
-void power_bucks(App_t *app)
-{
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_5V);
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_12V);
-    Pwr_Buck_Toggle(&app->power_controller, PWR_BUCK_VVAR);
-    HAL_Delay(100);
-}
-
-void run_controllers(App_t *app)
-{
-    Pwr_Ctrl_Run(&app->power_controller);
-    Temp_Ctrl_Run(&app->temperature_controller);
-    Dsp_Ctrl_Run(&app->display_controller);
-}
-
-void test_controllers(App_t *app)
-{
-    // test display, power, temperature, status controllers
 }
 
 void check_power(App_t *app)
